@@ -6,8 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name = "day1"
-path = "src/day1.rs"
+name = "day01"
+path = "src/day01.rs"
+
+[[bin]]
+name = "day02a"
+path = "src/day02a.rs"
+
+[[bin]]
+name = "day02b"
+path = "src/day02b.rs"
 
 [dependencies]
 color-eyre = "0.5.11"
