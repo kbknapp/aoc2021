@@ -15,8 +15,9 @@ pub fn parse_input() -> Vec<Direction> {
 
 #[derive(Debug, Default, PartialEq)]
 pub struct Location {
-    horiz: i64,
-    depth: i64,
+    pub horiz: i64,
+    pub depth: i64,
+    pub aim: i64,
 }
 
 pub enum Direction {
@@ -30,9 +31,9 @@ impl FromStr for Direction {
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         let mut parts = s.split_ascii_whitespace();
         match parts.next() {
-            Some("forward") => Ok(Direction::Forward(parts.next()?.parse()?)),
-            Some("down") => Ok(Direction::Down(parts.next()?.parse()?)),
-            Some("up") => Ok(Direction::Up(parts.next()?.parse()?)),
+            Some("forward") => Ok(Direction::Forward(parts.next().unwrap().parse()?)),
+            Some("down") => Ok(Direction::Down(parts.next().unwrap().parse()?)),
+            Some("up") => Ok(Direction::Up(parts.next().unwrap().parse()?)),
             _ => Err(eyre!("invalid direction: {}", s)),
         }
     }

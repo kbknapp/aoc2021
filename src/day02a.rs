@@ -1,9 +1,9 @@
-use color_eyre::eyre::Report;
+use color_eyre::eyre::Result;
 
 use aoc21::day02::{parse_input, Direction, Location};
 
 fn run(dirs: &[Direction]) -> i64 {
-    let Location { horiz, depth } = dirs.iter().fold(Location::default(), |mut acc, d| {
+    let Location { horiz, depth, .. } = dirs.iter().fold(Location::default(), |mut acc, d| {
         match d {
             Direction::Up(i) => acc.depth -= i,
             Direction::Down(i) => acc.depth += i,
