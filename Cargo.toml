@@ -21,5 +21,9 @@ path = "src/day02b.rs"
 name = "day03"
 path = "src/day03.rs"
 
+[[bin]]
+name = "day04"
+path = "src/day04.rs"
+
 [dependencies]
 color-eyre = "0.5.11"

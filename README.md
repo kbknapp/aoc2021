@@ -6,6 +6,7 @@
 | 2 |[doc/day02.txt](./doc/day02.txt) |[inputs/day02.txt](./inputs/day02.txt) | [src/day02a.rs](./src/day02a.rs) |
 | 2 |[doc/day02.txt](./doc/day02.txt) |[inputs/day02.txt](./inputs/day02.txt) | [src/day02b.rs](./src/day02b.rs) |
 | 3 |[doc/day03.txt](./doc/day03.txt) |[inputs/day03.txt](./inputs/day03.txt) | [src/day03.rs](./src/day03.rs) |
+| 4 |[doc/day04.txt](./doc/day04.txt) |[inputs/day04.txt](./inputs/day04.txt) | [src/day04.rs](./src/day04.rs) |
 
 ## Scenario 
 
