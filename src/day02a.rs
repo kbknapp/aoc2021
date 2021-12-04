@@ -16,7 +16,8 @@ fn run(dirs: &[Direction]) -> i64 {
 }
 
 fn main() -> Result<()> {
-    Ok(println!("part 1: {}", run(&*parse_input())))
+    println!("part 1: {}", run(&*parse_input()));
+    Ok(())
 }
 
 #[cfg(test)]

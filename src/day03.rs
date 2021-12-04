@@ -66,13 +66,13 @@ fn subset(input: Vec<i64>, ones: bool, bit: usize) -> Vec<i64> {
         input
             .iter()
             .filter(|n| *n & 1 << bit == 1 << bit)
-            .map(|n| *n)
+            .copied()
             .collect()
     } else {
         input
             .iter()
             .filter(|n| (*n ^ 1 << bit) & 1 << bit == 1 << bit)
-            .map(|n| *n)
+            .copied()
             .collect()
     }
 }
