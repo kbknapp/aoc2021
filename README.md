@@ -10,7 +10,7 @@
 | 5 |[doc/day05.txt](./doc/day05.txt) |[inputs/day05.txt](./inputs/day05.txt) | [src/day05.rs](./src/day05.rs) |
 | 6 |[doc/day06.txt](./doc/day06.txt) |[inputs/day06.txt](./inputs/day06.txt) | [src/day06.rs](./src/day06.rs) |
 
-## Scenario 
+## Scenario
 
 You're minding your own business on a ship at sea when the overboard alarm goes
 off! You rush to see if you can help. Apparently, one of the Elves tripped and
@@ -29,3 +29,22 @@ Collect stars by solving puzzles. Two puzzles will be made available on each
 day in the Advent calendar; the second puzzle is unlocked when you complete the
 first. Each puzzle grants one star. Good luck!
 
+## Custom Constraints
+
+The end goal is to run all days (both parts) in under 1 second.
+
+Using [`hyperfine`](https://github.com/sharkdp/hyperfine) to run the naive [`runall.sh`](./runall.sh) script and take the mean time.
+
+This is unscientific as there is no thought going in to optimizing the parsing
+of inputs, it's just a naive `cat` to `stdin`.
+
+As of `day06`:
+
+```
+$ cargo clean
+$ cargo build -q --release
+$ hyperfine ./runall.sh
+Benchmark 1: ./runall.sh
+  Time (mean ± σ):      23.7 ms ±   4.9 ms    [User: 11.7 ms, System: 20.6 ms]
+  Range (min … max):    10.6 ms …  36.6 ms    127 runs 
+```
