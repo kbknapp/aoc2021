@@ -9,6 +9,7 @@
 | 4 |[doc/day04.txt](./doc/day04.txt) |[inputs/day04.txt](./inputs/day04.txt) | [src/day04.rs](./src/day04.rs) |
 | 5 |[doc/day05.txt](./doc/day05.txt) |[inputs/day05.txt](./inputs/day05.txt) | [src/day05.rs](./src/day05.rs) |
 | 6 |[doc/day06.txt](./doc/day06.txt) |[inputs/day06.txt](./inputs/day06.txt) | [src/day06.rs](./src/day06.rs) |
+| 7 |[doc/day07.txt](./doc/day07.txt) |[inputs/day07.txt](./inputs/day07.txt) | [src/day07.rs](./src/day07.rs) |
 
 ## Scenario
 
@@ -38,13 +39,13 @@ Using [`hyperfine`](https://github.com/sharkdp/hyperfine) to run the naive [`run
 This is unscientific as there is no thought going in to optimizing the parsing
 of inputs, it's just a naive `cat` to `stdin`.
 
-As of `day06`:
+As of `day07`:
 
 ```
 $ cargo clean
 $ cargo build -q --release
 $ hyperfine ./runall.sh
 Benchmark 1: ./runall.sh
-  Time (mean ± σ):      23.7 ms ±   4.9 ms    [User: 11.7 ms, System: 20.6 ms]
-  Range (min … max):    10.6 ms …  36.6 ms    127 runs 
+  Time (mean ± σ):      34.3 ms ±   9.8 ms    [User: 19.0 ms, System: 26.1 ms]
+  Range (min … max):    11.1 ms …  49.3 ms    244 runs
 ```
