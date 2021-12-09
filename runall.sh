@@ -1,10 +1,11 @@
 #!/bin/bash
 
-cat inputs/day01.txt | ./target/release/day01
-cat inputs/day02a.txt | ./target/release/day02a
-cat inputs/day02b.txt | ./target/release/day02b
-cat inputs/day03.txt | ./target/release/day03
-cat inputs/day04.txt | ./target/release/day04
-cat inputs/day05.txt | ./target/release/day05
-cat inputs/day06.txt | ./target/release/day06
-cat inputs/day07.txt | ./target/release/day07
+./target/release/day01    <(inputs/day01.txt )
+./target/release/day02a   <(inputs/day02a.txt)
+./target/release/day02b   <(inputs/day02b.txt)
+./target/release/day03    <(inputs/day03.txt )
+./target/release/day04    <(inputs/day04.txt )
+./target/release/day05    <(inputs/day05.txt )
+./target/release/day06    <(inputs/day06.txt )
+./target/release/day07    <(inputs/day07.txt )
+./target/release/day08    <(inputs/day08.txt )
