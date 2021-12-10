@@ -9,3 +9,4 @@
 ./target/release/day06    <(inputs/day06.txt )
 ./target/release/day07    <(inputs/day07.txt )
 ./target/release/day08    <(inputs/day08.txt )
+./target/release/day09    <(inputs/day09.txt )

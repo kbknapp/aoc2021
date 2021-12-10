@@ -11,6 +11,7 @@
 | 6 |[doc/day06.txt](./doc/day06.txt) |[inputs/day06.txt](./inputs/day06.txt) | [src/day06.rs](./src/day06.rs) |
 | 7 |[doc/day07.txt](./doc/day07.txt) |[inputs/day07.txt](./inputs/day07.txt) | [src/day07.rs](./src/day07.rs) |
 | 8 |[doc/day08.txt](./doc/day08.txt) |[inputs/day08.txt](./inputs/day08.txt) | [src/day08.rs](./src/day08.rs) |
+| 9 |[doc/day09.txt](./doc/day09.txt) |[inputs/day09.txt](./inputs/day09.txt) | [src/day09.rs](./src/day09.rs) |
 
 ## Scenario
 
@@ -47,6 +48,6 @@ $ cargo clean
 $ cargo build -q --release
 $ hyperfine ./runall.sh
 Benchmark 1: ./runall.sh
-  Time (mean ± σ):      92.9 ms ±   3.8 ms    [User: 8.2 ms, System: 15.7 ms]
-  Range (min … max):    87.2 ms … 105.2 ms    33 runs
+  Time (mean ± σ):     131.4 ms ±  33.6 ms    [User: 11.2 ms, System: 25.1 ms]
+  Range (min … max):    90.5 ms … 193.4 ms    15 runs
 ```
