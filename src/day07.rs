@@ -8,13 +8,12 @@ fn parse_input() -> Vec<usize> {
     io::stdin()
         .lock()
         .lines()
-        .map(|line| {
+        .flat_map(|line| {
             line.unwrap()
                 .split(',')
                 .map(|n| n.parse::<usize>().unwrap())
                 .collect::<Vec<_>>()
         })
-        .flatten()
         .collect()
 }
 
