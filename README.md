@@ -40,15 +40,15 @@ The end goal is to run all days (both parts) in under 1 second.
 Using [`hyperfine`](https://github.com/sharkdp/hyperfine) to run the naive [`runall.sh`](./runall.sh) script and take the mean time.
 
 This is unscientific as there is no thought going in to optimizing the parsing
-of inputs, it's just a naive `cat` to `stdin`.
+of inputs, it's just a naive use of `stdin`.
 
-As of `day08`:
+As of `day10`:
 
 ```
 $ cargo clean
 $ cargo build -q --release
 $ hyperfine ./runall.sh
 Benchmark 1: ./runall.sh
-  Time (mean ± σ):     131.4 ms ±  33.6 ms    [User: 11.2 ms, System: 25.1 ms]
-  Range (min … max):    90.5 ms … 193.4 ms    15 runs
+  Time (mean ± σ):      17.9 ms ±   0.9 ms    [User: 7.4 ms, System: 10.4 ms]
+  Range (min … max):    16.4 ms …  21.3 ms    145 runs
 ```
