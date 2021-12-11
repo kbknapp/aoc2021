@@ -12,6 +12,7 @@
 | 7 |[doc/day07.txt](./doc/day07.txt) |[inputs/day07.txt](./inputs/day07.txt) | [src/day07.rs](./src/day07.rs) |
 | 8 |[doc/day08.txt](./doc/day08.txt) |[inputs/day08.txt](./inputs/day08.txt) | [src/day08.rs](./src/day08.rs) |
 | 9 |[doc/day09.txt](./doc/day09.txt) |[inputs/day09.txt](./inputs/day09.txt) | [src/day09.rs](./src/day09.rs) |
+| 10 |[doc/day10.txt](./doc/day10.txt) |[inputs/day10.txt](./inputs/day10.txt) | [src/day10.rs](./src/day10.rs) |
 
 ## Scenario
 
